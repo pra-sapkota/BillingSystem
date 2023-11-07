@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+    @apply font-semibold border border-teal-900 text-black rounded-sm placeholder:text-sm outline-none px-2 py-1 w-full
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.label {
+    @apply text-black text-start w-full font-bold
+}
+
+.LogInput {
+    @apply font-semibold text-black rounded-sm placeholder:text-sm outline-none p-3 w-full border border-teal-900 border-opacity-10
+}
+
+
+
+.LogLabel {
+    @apply text-black w-full font-bold mt-3 py-1
 }
